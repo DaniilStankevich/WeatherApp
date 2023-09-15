@@ -1,6 +1,5 @@
 import React from "react"
 import { View, Text, TouchableOpacity, Image } from "react-native"
-import { checkImageURL } from "../../../../utils"
 
 import styles from "./nextdaycard.style"
 
@@ -82,44 +81,3 @@ const NextDayCard = ({ job, handLeNavigate }) => {
 }
 
 export default NextDayCard
-
-// Мой сурс
-
-/*
- <TouchableOpacity style={styles.container} onPress={handLeNavigate}>
-
-      <TouchableOpacity style={styles.logoContainer}>
-          <Image
-            source={{ uri: 
-               `http:${job.day.condition.icon}` }}
-            resizeMode="contain"
-            style={styles.logImage}
-          />
-      </TouchableOpacity>
-
-    
-      <View style={styles.textContainer}>
-          <View>
-          <Text style={styles.jobType}>
-                {job.day.condition.text}
-          </Text>      
-          </View>
-       
-          <View>
-          <Text style={styles.jobType}>
-          {myDate} 
-            </Text>
-            </View>
-
-      </View>
-
-    </TouchableOpacity>
-
-*/
-
-/*
-            source={{ uri: checkImageURL()
-              ?   `http:${job.day.condition.icon}` : "https://t4.ftcdn.net/jpg/05/05/61/73/360_F_505617309_NN1CW7diNmGXJfMicpY9eXHKV4sqzO5H.jpg" }}
-            resizeMode="contain"
-
-*/
